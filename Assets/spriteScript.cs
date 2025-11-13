@@ -1,0 +1,20 @@
+using UnityEngine;
+
+public class spriteScript : MonoBehaviour
+{
+    // Start is called once before the first execution of Update after the MonoBehaviour is created
+    void Start()
+    {
+        
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+        if (transform.parent != null)
+        {
+            // Reset local rotation so this object always stays upright (perpendicular to ground)
+            transform.rotation = Quaternion.identity;
+        }
+    }
+}
